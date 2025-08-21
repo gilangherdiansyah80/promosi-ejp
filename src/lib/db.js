@@ -1,7 +1,7 @@
 import mysql from "mysql2/promise";
 
 const db = mysql.createPool({
-  host: "localhost",
+  host: "127.0.0.1",
   user: "ejp",
   password: "ejp",
   database: "promosi_ejp",
