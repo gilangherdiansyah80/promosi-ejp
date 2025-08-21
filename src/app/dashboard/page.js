@@ -8,13 +8,13 @@ const Home = () => {
   const [dataTransaksi, setDataTransaksi] = useState([]);
 
   useEffect(() => {
-    fetch("/api/produk")
+    fetch("https://ejpeacecoffee.online/api/produk")
       .then((response) => response.json())
       .then((data) => setDataProduk(data.payload.datas));
   }, []);
 
   useEffect(() => {
-    fetch("/api/promo-product")
+    fetch("https://ejpeacecoffee.online/api/promo-product")
       .then((response) => response.json())
       .then((data) => setDataTransaksi(data.payload.datas));
   }, []);
