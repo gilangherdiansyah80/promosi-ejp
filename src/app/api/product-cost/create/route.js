@@ -6,12 +6,6 @@ import { NextResponse } from "next/server";
 import db from "../../../../lib/db"; // Sesuaikan path DB-mu!
 export const dynamic = "force-dynamic";
 
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
-
 // 🔵 Helpers
 function normalizeKey(key) {
   return key.trim().replace(/\./g, "").replace(/\s+/g, "");
