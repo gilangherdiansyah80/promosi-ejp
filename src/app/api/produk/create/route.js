@@ -8,11 +8,11 @@ import csv from "csv-parser";
 import db from "../../../../lib/db";
 export const dynamic = "force-dynamic";
 
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
+// export const config = {
+//   api: {
+//     bodyParser: false,
+//   },
+// };
 
 // Helper: Convert ReadableStream to Node.js Readable
 async function streamToNodeReadable(req) {
